@@ -15,7 +15,7 @@
 #define PROP_PIH_SECURITY_PATCH "persist.sys.pihooks.security_patch"
 
 #define PROP_FIRST_API_LEVEL "ro.product.first_api_level"
-#define PROP_PIH_FIRST_API_LEVEL "persist.sys.pihooks.first_api_level"
+#define PROP_PIH_FIRST_API_LEVEL "persist.sys.pihooks.api_level"
 
 void PropImitationHooks::OnFind(const char** name) {
   if (getprogname() == nullptr || strcmp(getprogname(), GMS_UNSTABLE) != 0) {
